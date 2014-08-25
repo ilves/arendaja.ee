@@ -1,0 +1,1 @@
+ALTER TABLE `ad` ADD `info_url` TEXT NOT NULL AFTER `content`;

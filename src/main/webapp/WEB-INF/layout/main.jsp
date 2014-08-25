@@ -1,3 +1,4 @@
+<!DOCTYPE HTML>
 <%@ include file="/WEB-INF/layout/taglibs.jsp"%>
 <html>
     <head>
@@ -5,11 +6,12 @@
     <link rel="stylesheet" type="text/css" href="<c:url value='/resources/bootstrap/css/bootstrap.css'/>"/>
     <link rel="stylesheet" type="text/css" href="<c:url value='/resources/bootstrap/css/bootstrap-theme.css'/>"/>
     <link rel="stylesheet" type="text/css" href="<c:url value='/resources/style/main.css'/>"/>
-
-    <title>Default tiles template</title>
-    <style type="text/css">
-
-    </style>
+    <meta charset="utf-8">
+    <meta name="description" content="<tiles:insertAttribute name="page_description" ignore="true"/>">
+    <meta property="og:image" content="<tiles:insertAttribute name="og_image" ignore="true"/>" />
+    <meta property="og:title" content="<tiles:insertAttribute name="og_title" ignore="true"/>" />
+    <meta property="og:description" content="<tiles:insertAttribute name="og_desc" ignore="true"/>"/>
+    <title><tiles:insertAttribute name="title" ignore="true"/></title>
 </head>
 <body role="document">
     <script>

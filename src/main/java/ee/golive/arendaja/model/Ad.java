@@ -34,6 +34,9 @@ public class Ad {
     @Column(name="date_created")
     private Date dateCreated;
 
+    @Column(name="info_url")
+    private String info_url;
+
     public String getCompany_title() {
         return company_title;
     }
@@ -96,6 +99,14 @@ public class Ad {
 
     public void setDateCreated(Date dateCreated) {
         this.dateCreated = dateCreated;
+    }
+
+    public String getInfo_url() {
+        return info_url;
+    }
+
+    public void setInfo_url(String info_url) {
+        this.info_url = info_url;
     }
 
     @PrePersist
