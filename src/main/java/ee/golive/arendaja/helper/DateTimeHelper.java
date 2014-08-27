@@ -14,15 +14,15 @@ public class DateTimeHelper {
             outputDateTime = myFormat.format(inputDateTime);
         } else if (diff > 60*60*24) {
             int days = Math.round(diff/(60*60*24));
-            outputDateTime = days == 1 ? ("about 1 Day ago") : ("about " + days + " Days ago");
+            outputDateTime = days == 1 ? ("umbes 1 p&auml;ev tagasi") : ("umbes " + days + " p&auml;eva tagasi");
         } else if (diff > 60*60) {
             int hours = Math.round(diff/(60*60));
-            outputDateTime = hours == 1 ? ("an hour ago") : (hours + " hours ago");
+            outputDateTime = hours == 1 ? ("tund aega tagasi") : (hours + " tundi tagasi");
         } else if (diff > 60) {
             int minutes = Math.round(diff/(60));
-            outputDateTime = minutes == 1 ? ("1 minute ago") : (minutes + " minutes ago");
+            outputDateTime = minutes == 1 ? ("minut aega tagasi") : (minutes + " minutit tagasi");
         } else {
-            outputDateTime = "few seconds ago";
+            outputDateTime = "m&otilde;ni sekund tagasi";
         }
         return outputDateTime;
     }
