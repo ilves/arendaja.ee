@@ -11,7 +11,7 @@
         <put-attribute name="og_title" value="Arendaja.ee - Tööpakkumised"></put-attribute>
         <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
         <put-attribute name="title" value="Arendaja.ee"></put-attribute>
-        <put-attribute name="og_image" value="http://www.arendaja.ee/resources/seo/512.png"></put-attribute>
+        <put-attribute name="og_image" value="http://www.arendaja.ee/resources/seo/promo.jpg"></put-attribute>
     </definition>
 
     <definition name="loginForm" extends="baseLayout">
