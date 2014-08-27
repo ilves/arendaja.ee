@@ -6,8 +6,12 @@
         <put-attribute name="header" value="/WEB-INF/layout/header.jsp" />
         <put-attribute name="menu" value="/WEB-INF/layout/menu.jsp" />
         <put-attribute name="content" value="" />
+        <put-attribute name="og_desc" value="Töökuulutused, projektid, tööpakkumised tarkvara programeerijatele, arendajatele, adminstraatoritele ja teistele IT inimestele. Kiirelt ja mugavalt!" />
+        <put-attribute name="page_description" value="Töökuulutused, projektid, tööpakkumised tarkvara programeerijatele, arendajatele, adminstraatoritele ja teistele IT inimestele. Kiirelt ja mugavalt!" />
+        <put-attribute name="og_title" value="Arendaja.ee - Tööpakkumised"></put-attribute>
         <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
         <put-attribute name="title" value="Arendaja.ee"></put-attribute>
+        <put-attribute name="og_image" value="http://www.arendaja.ee/resources/seo/512.png"></put-attribute>
     </definition>
 
     <definition name="loginForm" extends="baseLayout">

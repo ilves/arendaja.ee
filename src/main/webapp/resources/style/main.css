@@ -22,8 +22,10 @@ body {
     font-family: Arial, sans-serif;
 }
 .navbar-brand {
-    color:#008000 !important;
+    color:#579bd3 !important;
     font-weight: bold;
+    background:url(../seo/logo.png) left center no-repeat;
+    padding-left:40px;
 }
 .job-ad {
     line-height: 1.3;
