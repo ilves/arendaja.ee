@@ -14,14 +14,12 @@
         <put-attribute name="og_image" value="http://www.arendaja.ee/resources/seo/promo.jpg"></put-attribute>
     </definition>
 
-    <definition name="loginForm" extends="baseLayout">
-        <put-attribute name="navigation" value="" />
-        <put-attribute name="content" value="/WEB-INF/pages/login/login.jsp" />
-        <put-attribute name="footer" value="" />
-    </definition>
-
-    <definition name="dashboardForm" extends="baseLayout">
-        <put-attribute name="content" value="/WEB-INF/pages/dashboard/dashboard.jsp" />
+    <definition name="singleAd" extends="baseLayout">
+        <put-attribute name="title" expression="${ad.title} - Arendaja.ee"/>
+        <put-attribute name="page_description" expression="${ad.content}"/>
+        <put-attribute name="og_title" expression="${ad.title}"/>
+        <put-attribute name="og_desc" expression="${ad.content}"/>
+        <put-attribute name="content" value="/WEB-INF/pages/singleAd.jsp" />
     </definition>
 
 </tiles-definitions>
