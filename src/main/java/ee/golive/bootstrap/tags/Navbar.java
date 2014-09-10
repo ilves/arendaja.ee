@@ -18,7 +18,7 @@ public class Navbar extends Tag {
 
         nav.addStyle("navbar");
         nav.addStyle("navbar-default");
-        nav.addStyle("navbar-fixed-top");
+        nav.addStyle("navbar-static-top");
         nav.addAttribute("role", "navigation");
 
         container.addStyle("container");

@@ -17,7 +17,7 @@
                 <form:textarea path="content" class="form-control" rows="6" />
             </div>
             <div class="form-group">
-                <form:label path="content"><spring:message code="ad.info_url" /></form:label>
+                <form:label path="info_url"><spring:message code="ad.info_url" /></form:label>
                 <form:input path="info_url" class="form-control" />
             </div>
             <div class="form-group">
