@@ -6,6 +6,7 @@ import ee.golive.arendaja.repository.AdRepository;
 import ee.golive.arendaja.service.AdService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -33,11 +34,10 @@ public class AdController {
     }
 
     @RequestMapping("/ad/{someID}")
-    public ModelAndView singleAd(@PathVariable(value="someID") Long id) {
-        ModelAndView mv = new ModelAndView("single-ad");
+    public String singleAd(ModelMap model, @PathVariable(value="someID") Long id) {
         Ad ad = adRepository.findOne(id);
-        mv.addObject("ad", ad);
-        return mv;
+        model.addAttribute("ad", ad);
+        return "singleAd";
     }
 
     @RequestMapping(value = "/new", method = RequestMethod.GET)
@@ -52,7 +52,7 @@ public class AdController {
         }
         adRepository.save(ad);
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("single-ad");
+        modelAndView.setViewName("singleAd");
         modelAndView.addObject("ad", ad);
         return modelAndView;
     }

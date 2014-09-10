@@ -17,6 +17,7 @@ def tilesVersion = '3.0.4'
 def tilesCore    = "org.apache.tiles:tiles-core:${tilesVersion}"
 def tilesAPI     = "org.apache.tiles:tiles-api:${tilesVersion}"
 def tilesJSP     = "org.apache.tiles:tiles-jsp:${tilesVersion}"
+def tilesEL     = "org.apache.tiles:tiles-el:${tilesVersion}"
 
 configurations {
   runtimeOnly
@@ -56,7 +57,7 @@ dependencies {
 
 
     compile(
-        tilesCore, tilesAPI, tilesJSP
+        tilesCore, tilesAPI, tilesJSP, tilesEL
     )
 
     providedCompile "javax.servlet:servlet-api:2.5"
