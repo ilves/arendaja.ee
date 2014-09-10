@@ -3,8 +3,8 @@
 <html>
     <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="stylesheet" type="text/css" href="http://dvcrptv1jab87.cloudfront.net<c:url value='/resources/bootstrap/css/bootstrap.css'/>"/>
-    <link rel="stylesheet" type="text/css" href="http://dvcrptv1jab87.cloudfront.net<c:url value='/resources/style/main.css'/>"/>
+    <link rel="stylesheet" type="text/css" href="<c:url value='/resources/bootstrap/css/bootstrap.css'/>"/>
+    <link rel="stylesheet" type="text/css" href="<c:url value='/resources/style/main.css'/>"/>
     <link rel="shortcut icon" type="image/x-icon" href="<c:url value='/resources/seo/favicon.ico'/>" />
     <meta charset="utf-8">
     <meta name="description" content="<tiles:insertAttribute name="page_description" ignore="true"/>">
