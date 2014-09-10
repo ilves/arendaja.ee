@@ -16,7 +16,7 @@ public class Ad {
 
     private String active;
 
-    @Size(min=5, max=30)
+    @Size(min=5, max=60)
     private String title;
 
     @Size(min=100, max=1000)

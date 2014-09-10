@@ -2,7 +2,7 @@
 <tiles:insertDefinition name="eventLayout">
     <tiles:putAttribute name="content">
         <h1>${event.title}</h1>
-        <p>${event.location_title} - ${event.location_city}, ${event.location_country}</p>
+        <p>${event.location_title} - ${event.location_city}, ${event.location_country} - <strong><fmt:formatDate value="${event.dateStart}" pattern="yyyy-MM-dd HH:mm" /></strong></p>
         <p>${event.content}</p>
         <if test="${fn:length(event.info_url) > 0}">
             <p>Lisainfo: <a target="_blank" href="${event.info_url}">${event.info_url}</a></p>
