@@ -54,8 +54,7 @@ public class AdminController {
                     );
 
                     String msg = "(via arendaja.ee)";
-                    msg = msg + " " + ad.getTitle() + " - " + ad.getSummary() + "\n\n";
-                    msg = msg + "Firma: " + company;
+                    msg = msg + " " + ad.getTitle() + ", " + company + "\n Kliki kuulutusel ja lohe edasi!";
 
                     try {
                         facebook.pageOperations().post(env.getProperty("facebook.pageid"), msg, link);

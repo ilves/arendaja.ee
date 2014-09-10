@@ -15,9 +15,9 @@
     </definition>
 
     <definition name="singleAd" extends="baseLayout">
-        <put-attribute name="title" expression="${ad.title} - Arendaja.ee"/>
+        <put-attribute name="title" expression="${ad.title} | Arendaja.ee"/>
         <put-attribute name="page_description" expression="${ad.content}"/>
-        <put-attribute name="og_title" expression="${ad.title}"/>
+        <put-attribute name="og_title" expression="${ad.title} - ${ad.company_title} - ${ad.company_city}, ${ad.company_country} | Arendaja.ee"/>
         <put-attribute name="og_desc" expression="${ad.content}"/>
         <put-attribute name="content" value="/WEB-INF/pages/singleAd.jsp" />
     </definition>
